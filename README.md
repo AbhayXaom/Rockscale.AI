@@ -1,4 +1,29 @@
-# Rockscale.AI// @ts-check
+# build output
+dist/
+# generated types
+.astro/
+
+# dependencies
+node_modules/
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+
+# environment variables
+.env
+.env.production
+
+# macOS-specific files
+.DS_Store
+
+# jetbrains setting folder
+.idea/
+
+// @ts-check
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 
@@ -5616,28 +5641,3 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
   "include": [".astro/types.d.ts", "**/*"],
   "exclude": ["dist"]
 }
-
-# build output
-dist/
-# generated types
-.astro/
-
-# dependencies
-node_modules/
-
-# logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-
-
-# environment variables
-.env
-.env.production
-
-# macOS-specific files
-.DS_Store
-
-# jetbrains setting folder
-.idea/
